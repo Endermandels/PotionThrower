@@ -10,29 +10,33 @@ script = ExtResource("1_7jqjj")
 [node name="Player" parent="." instance=ExtResource("1_7tdfw")]
 position = Vector2(207, 433)
 
-[node name="Enemy" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Enemy" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(494, 282)
 
-[node name="Enemy2" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemy2" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(616, 135)
 
-[node name="Enemy3" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemy3" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(304, 200)
 
-[node name="Enemy4" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemy4" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(653, 277)
 
-[node name="Enemy5" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemy5" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(654, 345)
 
-[node name="Enemy6" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemy6" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(463, 109)
 
-[node name="Enemy7" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemy7" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(554, 428)
 
-[node name="Enemy8" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemy8" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(451, 363)
 
-[node name="Enemy9" parent="." instance=ExtResource("2_u6wga")]
+[node name="Enemy9" parent="Enemies" instance=ExtResource("2_u6wga")]
 position = Vector2(432, 206)
+
+[node name="Potions" type="Node2D" parent="."]
