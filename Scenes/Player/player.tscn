@@ -1,11 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bmaniynig8wt2"]
+[gd_scene load_steps=3 format=3 uid="uid://bmaniynig8wt2"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_hi8ax"]
 [ext_resource type="Texture2D" uid="uid://bigi6vydutvr4" path="res://Assets/Player/player.png" id="1_sqcyn"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hf0sx"]
-radius = 24.0
-height = 80.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_hi8ax")
@@ -14,6 +10,3 @@ script = ExtResource("1_hi8ax")
 position = Vector2(-24, -8)
 scale = Vector2(0.13913, 0.151383)
 texture = ExtResource("1_sqcyn")
-
-[node name="Hitbox" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_hf0sx")
