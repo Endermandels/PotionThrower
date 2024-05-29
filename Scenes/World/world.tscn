@@ -1,18 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1ryvahsj7h87"]
+[gd_scene load_steps=4 format=3 uid="uid://d1ryvahsj7h87"]
 
 [ext_resource type="Script" path="res://Scenes/World/world.gd" id="1_7jqjj"]
 [ext_resource type="PackedScene" uid="uid://bmaniynig8wt2" path="res://Scenes/Player/player.tscn" id="1_7tdfw"]
 [ext_resource type="PackedScene" uid="uid://dc8j85vy0qpoi" path="res://Scenes/Enemy/enemy.tscn" id="2_u6wga"]
-[ext_resource type="PackedScene" uid="uid://dnwt5xbgkx0b1" path="res://Scenes/Potion/potion.tscn" id="4_4q2nm"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_7jqjj")
 
 [node name="Player" parent="." instance=ExtResource("1_7tdfw")]
 position = Vector2(207, 433)
-
-[node name="Potion2" parent="." instance=ExtResource("4_4q2nm")]
-position = Vector2(891, 246)
 
 [node name="Enemies" type="Node2D" parent="."]
 

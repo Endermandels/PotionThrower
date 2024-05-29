@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var potion_scene = preload('res://Scenes/Potion/potion.tscn')
 
 @onready var world_scene = get_parent()
+@onready var potions_list = world_scene.get_node('Potions')
 
 const SPEED = 300.0
 
@@ -13,7 +14,7 @@ func _input(event):
 			var new_potion = potion_scene.instantiate()
 			new_potion.set_mouse_pos(get_viewport().get_mouse_position())
 			new_potion.set_start_pos(position)
-			world_scene.add_child(new_potion)
+			potions_list.add_child(new_potion)
 
 func _physics_process(_delta):
 	var x_direction = Input.get_axis('ui_left', 'ui_right')
